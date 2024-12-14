@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS1102W.Html</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Times, serif;
+            background: linear-gradient(to bottom, rgb(235, 235, 235), rgba(255, 255, 255, 0));
+            background-color: #c6e8ff;
+            overflow-y: scroll; 
+            overflow-x: hidden; 
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000; 
+            z-index: -1; 
+        }
+
+        .line {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .star {
+            position: absolute;
+            border-radius: 50%; 
+            background-color: white; 
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            position: relative; 
+            z-index: 1; 
+            color: white; 
+        }
+
+        .logo {
+            font-size: 44px;
+            font-weight: bold;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-button {
+            background-color: rgba(63, 63, 63, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(100, 100, 100, 1);
+            transform: translateY(-6px);
+        }
+
+        .sub-background {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 80px auto;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #7e7e7e;
+            text-align: center;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .portfolio-button {
+            background-color: rgba(63, 63, 63, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 100px;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .portfolio-button:hover {
+            transform: translateY(-5px);
+            background-color: rgba(100, 100, 100, 1);
+        }
+
+        .portfolio-button:active {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <header class="header">
+        <div class="logo">In Mini-Space</div>
+        <nav class="nav-buttons">
+            <a href="Homepage.html" class="nav-button">Homepage</a>
+            <a href="Aboutme.html" class="nav-button">About Me</a>
+            <a href="Portfolios.html" class="nav-button">Portfolio's Section</a>
+            <a href="Topics.html" class="nav-button">Topic's Section</a>
+        </nav>
+    </header>
+
+    <div class="sub-background">
+        <h1>COMPUTER HARDWARE AND SOFTWARE REPORT AND THEIR IMPLEMENTATION IN THE DIFFERENT INSTITUTIONS IN THE COMMUNITY</h1>
+        
+        <main class="button-container">
+            <a href="3Portfolio.html" class="portfolio-button" aria-label="Go to 3rd Portfolio">3rd Portfolio</a>
+            <a href="5Portfolio.html" class="portfolio-button" aria-label="Go to 5th Portfolio">5th Portfolio</a>
+        </main>
+
+        <p><strong>Computer Hardware:</strong></p>
+        <p><strong>Central Processing Unit (CPU):</strong> Known as the brain of the computer, responsible for executing instructions and processing data.</p>
+        <p><strong>Random Access Memory (RAM):</strong> Temporary storage for data and programs currently being used by the CPU.</p>
+        <p><strong>Hard Disk Drive (HDD) / Solid-State Drive (SSD):</strong> Long-term storage for operating systems, applications, and user data.</p>
+        <p><strong>Input/Output Devices:</strong> Components like keyboards, mice, monitors, and printers facilitate interaction with the computer.</p>
+
+        <p><strong>Evolution of Software:</strong></p>
+        <p><strong>Early Software (1940s-1960s):</strong> Simple machine language programs and batch processing systems.</p>
+        <p><strong>High-Level Languages (1960s-1980s):</strong> Languages like FORTRAN, COBOL, and Pascal that allowed more human-readable code.</p>
+        <p><strong>Graphical User Interfaces (1980s-present):</strong> Introduction of intuitive interfaces like Microsoft Windows and Apple Macintosh.</p>
+        <p><strong>Modern Software:</strong> Involvement of cloud computing, mobile applications, and AI-powered software.</p>
+
+        <p><strong>Integrating Hardware and Software in Community Institutions:</strong></p>
+        <p><strong>Educational Institutions:</strong> Use of computers for teaching, research, and administrative tasks.</p>
+        <p><strong>Healthcare:</strong> Software for patient records, medical imaging, and remote monitoring.</p>
+        <p><strong>Government Agencies:</strong> Use of technology for citizen services, data management, and communication.</p>
+
+        <p><strong>Case Studies of Organizations Using Technology:</strong></p>
+        <p><strong>Community Library:</strong> Online catalog and digital lending system improving accessibility.</p>
+        <p><strong>Non-Profits:</strong> Donation management software streamlining operations.</p>
+        <p><strong>Small Businesses:</strong> POS and inventory systems enhancing efficiency.</p>
+        <p><strong>Community Centers:</strong> Online registration systems improving enrollment and communication.</p>
+
+        <p><strong>Key References:</strong></p>
+        <p>Books by authors like Patterson & Hennessy and Roger Pressman are cited, focusing on computer architecture, software engineering principles, and the history of computing.</p>
+
+        <p><strong>Trends and Innovations Shaping the Future:</strong></p>
+        <p><strong>Artificial Intelligence (AI):</strong> Transforming industries with automation, data analysis, and personalized experiences.</p>
+        <p><strong>Quantum Computing:</strong> Revolutionizing fields like medicine and cryptography.</p>
+        <p><strong>Internet of Things (IoT):</strong> The interconnectedness of devices leading to smarter environments.</p>
+        <p><strong>Edge Computing:</strong> Enhancing data processing by performing analysis closer to the source.</p>
+
+        <p><strong>Impact of Technology:</strong></p>
+        <p>This section reflects on how technology has dramatically changed our lives, while also raising concerns about privacy, digital divide, and the ethical use of AI and automation. It advocates for digital literacy, effective regulation, and ensuring that technology works for society's benefit.</p>
+    </div>
+
+    <script>
+        const background = document.querySelector('.background');
+
+        function createLine() {
+            const line = document.createElement('div');
+            line.className = 'line';
+            const length = Math.random() * 300 + 100;
+            line.style.width = length + 'px';
+            line.style.height = '2px';
+            line.style.top = (Math.random() * window.innerHeight) + 'px';
+            line.style.left = (-length) + 'px';
+
+            background.appendChild(line);
+
+            line.animate([ 
+                { transform: 'translateX(0)' },
+                { transform: `translateX(${window.innerWidth + length}px)` }
+            ], {
+                duration: Math.random() * 3000 + 2000,
+                easing: 'linear',
+                iterations: Infinity
+            });
+        }
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = Math.random() * (15 - 5) + 5;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.top = `${Math.random() * window.innerHeight}px`;
+            star.style.left = `${Math.random() * window.innerWidth}px`;
+
+            const twinkleDuration = Math.random() * (1.5 - 0.5) + 0.5;
+            star.animate([ 
+                { opacity: Math.random() },
+                { opacity: Math.random() }
+            ], {
+                duration: twinkleDuration * 1000,
+                iterations: Infinity,
+                direction: 'alternate'
+            });
+
+            background.appendChild(star);
+        }
+
+        for (let i = 0; i < 20; i++) {
+            createLine();
+        }
+
+        for (let i = 0; i < (window.innerWidth / 50); i++) {
+            createStar();
+        }
+    </script>
+</body>
+</html>

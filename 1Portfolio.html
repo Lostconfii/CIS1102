@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS1102W.Html</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Times, serif;
+            background: linear-gradient(to bottom, rgb(235, 235, 235), rgba(255, 255, 255, 0));
+            background-color: #c6e8ff;
+            overflow-y: scroll; 
+            overflow-x: hidden; 
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000; 
+            z-index: -1; 
+        }
+
+        .line {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .star {
+            position: absolute;
+            border-radius: 50%;
+            background-color: white; 
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            position: relative; 
+            z-index: 1; 
+            color: white; 
+        }
+
+        .logo {
+            font-size: 44px;
+            font-weight: bold;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-button {
+            background-color: rgba(63, 63, 63, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(100, 100, 100, 1);
+            transform: translateY(-6px);
+        }
+
+        .sub-background {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 80px auto;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #7e7e7e;
+            text-align: center;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            gap: 20px;
+        }
+
+        .portfolio-button {
+            background-color: rgba(63, 63, 63, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 100px;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .portfolio-button:hover {
+            transform: translateY(-5px); 
+            background-color: rgba(100, 100, 100, 1);
+        }
+
+        .portfolio-button:active {
+            transform: translateY(-2px); 
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <header class="header">
+        <div class="logo">In Mini-Space</div>
+        <nav class="nav-buttons">
+            <a href="Homepage.html" class="nav-button">Homepage</a>
+            <a href="Aboutme.html" class="nav-button">About Me</a>
+            <a href="Portfolios.html" class="nav-button">Portfolio's Section</a>
+            <a href="Topics.html" class="nav-button">Topic's Section</a>
+        </nav>
+    </header>
+
+    <div class="sub-background">
+        <h1>Computer Science as a Discipline</h1>
+
+        <main class="button-container">
+            <a href="2Portfolio.html" class="portfolio-button" aria-label="Go to 2nd Portfolio">2nd Portfolio</a>
+            <a href="3Portfolio.html" class="portfolio-button" aria-label="Go to 3rd Portfolio">3rd Portfolio</a>
+        </main>
+
+        <p>Computer Science as a Discipline: Computer Science (CS) is an expanding field focused on the study of computers and computational systems. It involves areas such as software development, data analysis, AI, and cybersecurity, which are crucial in the modern, digital world.</p>
+
+        <p>Definitions and Scope: Computer Science includes the study of algorithms, data structures, programming languages, and computational theory. It examines how computers work and their use in solving real-world problems.</p>
+
+        <p><strong>Hardware:</strong> Physical components of a computer (e.g., CPU, memory, storage).</p>
+        <p><strong>Software:</strong> Programs and instructions for the hardware.</p>
+        <p><strong>Networks:</strong> Systems that connect computers to enable communication.</p>
+        <p><strong>Data:</strong> The information processed and stored by computers.</p>
+
+        <p><strong>History and Evolution:</strong></p>
+        <p><strong>Ancient Origins:</strong> Early computation methods like the abacus.</p>
+        <p><strong>Mechanical Calculators:</strong> Advancements in the 19th century, leading to better computing power.</p>
+        <p><strong>Electronic Computers:</strong> Invention of the first electronic computer in the 1940s.</p>
+        <p><strong>Personal Computing:</strong> The rise of personal computers in the 1970s.</p>
+        <p><strong>Internet and Mobile Computing:</strong> The internet and mobile computing became widespread in the late 20th century.</p>
+
+        <p><strong>Fundamental Concepts:</strong></p>
+        <p><strong>Algorithms:</strong> Instructions to solve problems.</p>
+        <p><strong>Data Structures:</strong> Ways to store and retrieve data (e.g., arrays, trees).</p>
+        <p><strong>Programming Languages:</strong> Formal languages for writing software.</p>
+        <p><strong>Computational Theory:</strong> Theoretical foundations of computing.</p>
+
+        <p><strong>Interdisciplinary Nature:</strong> CS is highly interdisciplinary, drawing from fields like:</p>
+        <p><strong>Mathematics:</strong> Logic, algorithms, data analysis.</p>
+        <p><strong>Physics:</strong> Hardware design, computational physics.</p>
+        <p><strong>Linguistics:</strong> AI, natural language processing.</p>
+        <p><strong>Psychology:</strong> Human-computer interaction.</p>
+
+        <p><strong>Computer Engineering:</strong></p>
+        <p><strong>Hardware Design:</strong> Creating components like processors and storage devices.</p>
+        <p><strong>System Architecture:</strong> Designing computer systems’ structure.</p>
+        <p><strong>Embedded Systems:</strong> Developing systems embedded in other devices (e.g., medical equipment, cars).</p>
+
+        <p><strong>Fields in Computer Science:</strong></p>
+        <p><strong>Software Development:</strong> Creating software applications.</p>
+        <p><strong>Data Science:</strong> Analyzing large datasets for insights and predictions.</p>
+        <p><strong>Artificial Intelligence:</strong> Creating systems capable of learning and decision-making.</p>
+        <p><strong>Computer Security:</strong> Protecting computer systems from unauthorized access.</p>
+
+        <p><strong>Information Systems:</strong> Focuses on designing systems that support business operations.</p>
+        <p><strong>Applications:</strong> Database design, network management, business analysis, and user interface design.</p>
+
+        <p><strong>Information Technology (IT):</strong> Focused on managing technology in business operations. Includes System Administration, Software Installation and Support, and IT Project Management.</p>
+
+        <p><strong>Software Engineering:</strong> A systematic approach to software development, focusing on creating high-quality software. Steps include requirements analysis, software design, development, testing, deployment, and maintenance.</p>
+
+        <p><strong>Personal Information:</strong> Joshua Stephen Dale Rubi is 18 years old, lives in Ylaya Talamban, graduated from the University of Banilad's Senior High School, and is currently pursuing a BS Information Systems (BSIS) degree.</p>
+
+        <p>This overview explains the core aspects of computer science, its interdisciplinary nature, and the application of its concepts in different fields such as computer engineering, software development, and IT.</p>
+        
+    </div>
+
+    <script>
+        const background = document.querySelector('.background');
+
+        function createLine() {
+            const line = document.createElement('div');
+            line.className = 'line';
+            const length = Math.random() * 300 + 100;
+            line.style.width = length + 'px';
+            line.style.height = '2px';
+            line.style.top = (Math.random() * window.innerHeight) + 'px';
+            line.style.left = (-length) + 'px';
+
+            background.appendChild(line);
+
+            line.animate([ 
+                { transform: 'translateX(0)' },
+                { transform: `translateX(${window.innerWidth + length}px)` }
+            ], {
+                duration: Math.random() * 3000 + 2000,
+                easing: 'linear',
+                iterations: Infinity
+            });
+        }
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = Math.random() * (15 - 5) + 5;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.top = `${Math.random() * window.innerHeight}px`;
+            star.style.left = `${Math.random() * window.innerWidth}px`;
+
+            const twinkleDuration = Math.random() * (1.5 - 0.5) + 0.5;
+            star.animate([ 
+                { opacity: Math.random() },
+                { opacity: Math.random() }
+            ], {
+                duration: twinkleDuration * 1000,
+                iterations: Infinity,
+                direction: 'alternate'
+            });
+
+            background.appendChild(star);
+        }
+
+        for (let i = 0; i < 20; i++) {
+            createLine();
+        }
+
+        for (let i = 0; i < (window.innerWidth / 50); i++) {
+            createStar();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS1102W.Html</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Times, serif;
+            background: linear-gradient(to bottom, rgb(235, 235, 235), rgba(255, 255, 255, 0));
+            background-color: #c6e8ff;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            z-index: -1;
+        }
+
+        .line {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .star {
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+
+        .logo {
+            font-size: 44px;
+            font-weight: bold;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-button {
+            background-color: rgba(63, 63, 63, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(100, 100, 100, 1);
+            transform: translateY(-6px);
+        }
+
+        .sub-background {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 80px auto;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #7e7e7e;
+            text-align: center;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .portfolio-button {
+            background-color: rgba(63, 63, 63, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 100px;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .portfolio-button:hover {
+            transform: translateY(-5px);
+            background-color: rgba(100, 100, 100, 1);
+        }
+
+        .portfolio-button:active {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <header class="header">
+        <div class="logo">In Mini-Space</div>
+        <nav class="nav-buttons">
+            <a href="Homepage.html" class="nav-button">Homepage</a>
+            <a href="Aboutme.html" class="nav-button">About Me</a>
+            <a href="Portfolios.html" class="nav-button">Portfolio's Section</a>
+            <a href="Topics.html" class="nav-button">Topic's Section</a>
+        </nav>
+    </header>
+
+    <div class="sub-background">
+        <h1>COMPARATIVE STUDY ON DIFFERENT TYPES OF MOTHERBOARDS</h1>
+
+        <main class="button-container">
+            <a href="4Portfolio.html" class="portfolio-button" aria-label="Go to 4th Portfolio">4th Portfolio</a>
+            <a href="6Portfolio.html" class="portfolio-button" aria-label="Go to 6th Portfolio">6th Portfolio</a>
+        </main>
+
+        <p>Hello There! This page will cover up all the topics in CIS 1102.</p>
+
+        <p><strong>Overview of Motherboards</strong></p>
+        <p><strong>Definition:</strong> The motherboard is the central component connecting all parts of a computer, serving as the platform for the CPU, memory, storage devices, and expansion cards.</p>
+        
+        <p><strong>Form Factors</strong></p>
+        <p><strong>Importance:</strong> The form factor determines the size, shape, and layout of the motherboard, which affects compatibility with cases.</p>
+        <p><strong>Common Types:</strong></p>
+        <ul>
+            <li><strong>ATX (Advanced Technology Extended):</strong> The largest standard size, offering flexibility and expansion options.</li>
+            <li><strong>Micro-ATX:</strong> A smaller version suitable for compact systems.</li>
+            <li><strong>Mini-ITX:</strong> The smallest form factor ideal for ultra-compact builds.</li>
+        </ul>
+
+        <p><strong>CPU and Memory Support</strong></p>
+        <p><strong>CPU Sockets:</strong> Motherboards support specific CPU sockets for various families like Intel LGA 1700 or AMD AM5.</p>
+        <p><strong>Memory Slots:</strong> Typically support DDR4 or DDR5 RAM, varying in number and type.</p>
+
+        <p><strong>Chipsets and BIOS</strong></p>
+        <p><strong>Chipset Functionality:</strong> Manages communication between the CPU, memory, and peripherals.</p>
+        <p><strong>BIOS:</strong> Firmware that initiates the boot process and controls hardware settings.</p>
+
+        <p><strong>Expansion Capabilities</strong></p>
+        <p><strong>PCI Slots:</strong> Allow for the addition of graphics cards, sound cards, and other peripherals.</p>
+        <p><strong>SATA Connectivity:</strong> Connects storage devices like hard drives and SSDs.</p>
+
+        <p><strong>Comparison Table of Motherboard Types</strong></p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Form Factor</th>
+                    <th>Size/Compatibility</th>
+                    <th>CPU Slots</th>
+                    <th>Memory Slots</th>
+                    <th>Chipsets</th>
+                    <th>BIOS Type</th>
+                    <th>PCI Slots</th>
+                    <th>SATA Ports</th>
+                    <th>Built-in Features</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AT</td>
+                    <td>Larger, outdated</td>
+                    <td>1</td>
+                    <td>2-4</td>
+                    <td>Basic</td>
+                    <td>Legacy BIOS</td>
+                    <td>4-6</td>
+                    <td>None/IDE</td>
+                    <td>No onboard peripherals</td>
+                </tr>
+                <tr>
+                    <td>ATX</td>
+                    <td>Standard modern</td>
+                    <td>1</td>
+                    <td>2-4</td>
+                    <td>Advanced</td>
+                    <td>Modern UEFI/BIOS</td>
+                    <td>3-7</td>
+                    <td>4-8</td>
+                    <td>USB ports, audio, Ethernet</td>
+                </tr>
+                <tr>
+                    <td>Micro-ATX</td>
+                    <td>Smaller than ATX</td>
+                    <td>1</td>
+                    <td>2-4</td>
+                    <td>Mid-range</td>
+                    <td>Modern UEFI/BIOS</td>
+                    <td>2-4</td>
+                    <td>2-4</td>
+                    <td>Compact design</td>
+                </tr>
+                <tr>
+                    <td>Mini-ITX</td>
+                    <td>Ultra-compact</td>
+                    <td>1</td>
+                    <td>1-2</td>
+                    <td>Low-power</td>
+                    <td>Modern UEFI/BIOS</td>
+                    <td>0-1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const background = document.querySelector('.background');
+
+        function createLine() {
+            const line = document.createElement('div');
+            line.className = 'line';
+            const length = Math.random() * 300 + 100;
+            line.style.width = length + 'px';
+            line.style.height = '2px';
+            line.style.top = (Math.random() * window.innerHeight) + 'px';
+            line.style.left = (-length) + 'px';
+
+            background.appendChild(line);
+
+            line.animate([ 
+                { transform: 'translateX(0)' },
+                { transform: `translateX(${window.innerWidth + length}px)` }
+            ], {
+                duration: Math.random() * 3000 + 2000,
+                easing: 'linear',
+                iterations: Infinity
+            });
+        }
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = Math.random() * (15 - 5) + 5;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.top = `${Math.random() * window.innerHeight}px`;
+            star.style.left = `${Math.random() * window.innerWidth}px`;
+
+            const twinkleDuration = Math.random() * (1.5 - 0.5) + 0.5;
+            star.animate([ 
+                { opacity: Math.random() },
+                { opacity: Math.random() }
+            ], {
+                duration: twinkleDuration * 1000,
+                iterations: Infinity,
+                direction: 'alternate'
+            });
+
+            background.appendChild(star);
+        }
+
+        for (let i = 0; i < 20; i++) {
+            createLine();
+        }
+
+        for (let i = 0; i < (window.innerWidth / 50); i++) {
+            createStar();
+        }
+    </script>
+</body>
+</html>

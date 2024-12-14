@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS1102W.Html</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Times, serif;
+            background: linear-gradient(to bottom, rgb(235, 235, 235), rgba(255, 255, 255, 0));
+            background-color: #c6e8ff;
+            overflow-y: scroll; 
+            overflow-x: hidden; 
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000; 
+            z-index: -1; 
+        }
+
+        .line {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .star {
+            position: absolute;
+            border-radius: 50%; 
+            background-color: white; 
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            position: relative; 
+            z-index: 1; 
+            color: white; 
+        }
+
+        .logo {
+            font-size: 44px;
+            font-weight: bold;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-button {
+            background-color: rgba(63, 63, 63, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(100, 100, 100, 1);
+            transform: translateY(-6px);
+        }
+
+        .sub-background {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 80px auto;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #7e7e7e;
+            text-align: center;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            gap: 20px;
+        }
+
+        .portfolio-button {
+            background-color: rgba(63, 63, 63, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 100px;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .portfolio-button:hover {
+            transform: translateY(-5px); 
+            background-color: rgba(100, 100, 100, 1); 
+        }
+
+        .portfolio-button:active {
+            transform: translateY(-2px); 
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <header class="header">
+        <div class="logo">In Mini-Space</div>
+        <nav class="nav-buttons">
+            <a href="Homepage.html" class="nav-button">Homepage</a>
+            <a href="Aboutme.html" class="nav-button">About Me</a>
+            <a href="Portfolios.html" class="nav-button">Portfolio's Section</a>
+            <a href="Topics.html" class="nav-button">Topic's Section</a>
+        </nav>
+    </header>
+
+    <div class="sub-background">
+        <h1>Comparative Study of Different Types of Computer</h1>
+        
+        <main class="button-container">
+            
+            <a href="5Portfolio.html" class="portfolio-button" aria-label="Go to 5th Portfolio">5th Portfolio</a>
+            <a href="1Portfolio.html" class="portfolio-button" aria-label="Go to 1st Portfolio">1st Portfolio</a>
+        </main>
+
+        <p>Definition of a Computer:</p>
+        <p>A computer is defined as an electronic device that processes data and follows instructions to produce information.</p>
+
+        <p>Key Components of a Computer System:</p>
+        <p>The three key elements that make up a computer system are hardware, software, and data.</p>
+
+        <p>Desktop Computers:</p>
+        <p>Power and Versatility: Desktop computers provide the best performance and expandability, making them suitable for demanding tasks.</p>
+
+        <p>Laptops:</p>
+        <p>Portability: Laptops offer the convenience of mobility, allowing users to work or play anywhere with a power source.</p>
+        <p>Integration: Laptops integrate essential components like display, keyboard, and trackpad into a single compact device.</p>
+
+        <p>Tablets:</p>
+        <p>Touchscreen: Tablets feature a responsive touchscreen interface that allows for intuitive interaction with apps and content.</p>
+        <p>Lightweight and Portable: Tablets are extremely lightweight and portable, making them ideal for casual use or on-the-go productivity.</p>
+
+        <p>Smartphones:</p>
+        <p>Mobile Communication: Smartphones serve as the primary device for communication, providing capabilities for calls, text messages, and internet access.</p>
+
+        <p>Advantages and Disadvantages of Computer Types:</p>
+        <p>Desktop Computers: Advantages include power, versatility, and expandability; disadvantages are less portability and bulkiness.</p>
+        <p>Laptops: Advantages are portability, convenience, and integration; disadvantages include less power and limited upgrade options.</p>
+        <p>Tablets: Advantages are touchscreen interface and portability; disadvantages include limited functionality compared to laptops and desktops.</p>
+        <p>Smartphones: Advantages include mobile communication and computing capabilities.</p>
+
+        <p>Types of Computers:</p>
+        <p>Supercomputers: Examples include IBM Summit and Fugaku, featuring high-core CPUs and GPUs, multiple terabytes of memory, and extremely high calculating powers.</p>
+        <p>Mainframe Computers: An example is the IBM Z Series, which utilizes multi-core CPUs and is used for banking and large-scale transaction processing.</p>
+        <p>Mini Computers: Examples include DEC PDP and HPE NonStop, designed for medium-level tasks and small business operations.</p>
+        <p>Servers: Examples include Dell PowerEdge and HPE ProLiant, which handle multiple client requests and are used for hosting websites and managing networks.</p>
+        <p>Workstations: Examples include Lenovo ThinkStation and HP Z, optimized for single-user tasks like graphics and scientific research.</p>
+        <p>Micro Computers: Examples include Dell Inspiron and MacBook, suitable for general-purpose processing.</p>
+
+        <p>Features of Different Computer Types:</p>
+        <p>Mini Computer: Moderate processing speed, memory capacity ranging from 8 GB to 64 GB, and moderate power consumption.</p>
+        <p>Micro Computer: Low to moderate processing speed, typically 4 GB to 16 GB memory, and designed for energy efficiency.</p>
+        <p>Workstation: High processing speed, memory ranging from 16 GB to 128 GB or more, and high power consumption.</p>
+        <p>Server: High to very high processing speed, memory scaling from 32 GB to several terabytes, and very high power consumption.</p>
+    </div>
+
+    <script>
+        const background = document.querySelector('.background');
+
+        function createLine() {
+            const line = document.createElement('div');
+            line.className = 'line';
+            const length = Math.random() * 300 + 100;
+            line.style.width = length + 'px';
+            line.style.height = '2px';
+            line.style.top = (Math.random() * window.innerHeight) + 'px';
+            line.style.left = (-length) + 'px';
+
+            background.appendChild(line);
+
+            line.animate([ 
+                { transform: 'translateX(0)' },
+                { transform: `translateX(${window.innerWidth + length}px)` }
+            ], {
+                duration: Math.random() * 3000 + 2000,
+                easing: 'linear',
+                iterations: Infinity
+            });
+        }
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = Math.random() * (15 - 5) + 5;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.top = `${Math.random() * window.innerHeight}px`;
+            star.style.left = `${Math.random() * window.innerWidth}px`;
+
+            const twinkleDuration = Math.random() * (1.5 - 0.5) + 0.5;
+            star.animate([ 
+                { opacity: Math.random() },
+                { opacity: Math.random() }
+            ], {
+                duration: twinkleDuration * 1000,
+                iterations: Infinity,
+                direction: 'alternate'
+            });
+
+            background.appendChild(star);
+        }
+
+        for (let i = 0; i < 20; i++) {
+            createLine();
+        }
+
+        for (let i = 0; i < (window.innerWidth / 50); i++) {
+            createStar();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS1102W.Html</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Montserrat', Times, serif;
+            background: linear-gradient(to bottom, rgb(235, 235, 235), rgba(255, 255, 255, 0));
+            background-color: #c6e8ff;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+        }
+
+        .line {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .star {
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            position: relative;
+            z-index: 10;
+            color: white;
+        }
+
+        .logo {
+            font-size: 44px;
+            font-weight: bold;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .nav-button {
+            background-color: rgba(63, 63, 63, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(100, 100, 100, 1);
+            transform: translateY(-6px);
+        }
+
+        h1 {
+            color: #c7c7e6;
+            margin-bottom: 40px;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 0 50px;
+        }
+
+        .portfolio-button {
+            background-color: rgba(63, 63, 63, 0.8);
+            color: rgb(255, 255, 255);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 100px;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
+
+        .portfolio-button:hover {
+            transform: translateY(-5px);
+            background-color: rgba(100, 100, 100, 1);
+        }
+
+        .portfolio-button:active {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <header class="header">
+        <div class="logo">In Mini-Space</div>
+        <nav class="nav-buttons">
+          <a href="Homepage.html" class="nav-button">Homepage</a>
+          <a href="Aboutme.html" class="nav-button">About Me</a>
+          <a href="Portfolios.html" class="nav-button">Portfolio's Section</a>
+          <a href="Topics.html" class="nav-button">Topic's Section</a>
+        </nav>
+    </header>
+
+    <h1>In Mini-Space</h1> 
+
+    <main class="button-container">
+        <a href="Homepage.html" class="portfolio-button" aria-label="Go to Homepage">Homepage</a>
+        <a href="Aboutme.html" class="portfolio-button" aria-label="Go to About Me">About Me</a>
+        <a href="Portfolios.html" class="portfolio-button" aria-label="Go to Portfolio Section">Portfolio's Section</a>
+        <a href="Topics.html" class="portfolio-button" aria-label="Go to Topic's Section">Topic's Section</a>
+    </main>
+
+    <script>
+        const background = document.querySelector('.background');
+
+        function createLine() {
+           const line = document.createElement('div');
+           line.className = 'line';
+           const length = Math.random() * 300 + 100; 
+            line.style.width = length + 'px'; 
+            line.style.height = '2px'; 
+            line.style.top = (Math.random() * window.innerHeight) + 'px'; 
+            line.style.left = (-length) + 'px'; 
+           background.appendChild(line);
+           line.animate([
+               { transform: 'translateX(0)' },
+               { transform: `translateX(${window.innerWidth + length}px)` }
+           ], {
+               duration: Math.random() * 3000 + 2000,
+               easing: 'linear',
+               iterations: Infinity
+           });
+       }
+
+       function createStar() {
+           const star = document.createElement('div');
+           star.className = 'star';
+           const size = Math.random() * (15 - 5) + 5; 
+           star.style.width = `${size}px`;
+           star.style.height = `${size}px`;
+           star.style.top = `${Math.random() * window.innerHeight}px`;
+           star.style.left = `${Math.random() * window.innerWidth}px`;
+           const twinkleDuration = Math.random() * (1.5 - .5) + .5; 
+           star.animate([
+               { opacity: Math.random() }, 
+               { opacity: Math.random() }
+           ], {
+               duration: twinkleDuration *1000,
+               iterations : Infinity,
+               direction : "alternate"
+           });
+           background.appendChild(star);
+       }
+
+       for (let i = 0; i < 20; i++) {
+           createLine();
+       }
+
+       for (let i = 0; i < (window.innerWidth /50); i++) { 
+           createStar();
+       }
+    </script>
+</body>
+</html>
